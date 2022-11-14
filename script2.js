@@ -113,7 +113,7 @@ function countDown() {
  * finally resets the score, time and enables btnStart.
  */
 function endGame() {
-      music.pause();
+    music.pause();
     gameoverm.play();
     IsPlaying = false;
     alert("Skormu adalah " + score);
