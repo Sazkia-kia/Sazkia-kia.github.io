@@ -120,6 +120,6 @@ function endGame() {
     time = 30;
     //enable the button to make it clickable
     btnStart.removeAttribute('disabled');
+    music.pause();
+    gameoverm.play();
 }
-music.pause();
-gameoverm.play();
