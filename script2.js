@@ -113,6 +113,8 @@ function countDown() {
  * finally resets the score, time and enables btnStart.
  */
 function endGame() {
+    music.pause();
+    gameoverm.play();
     IsPlaying = false;
     alert("Skormu adalah " + score);
     //reset score and time for next game.
@@ -120,6 +122,4 @@ function endGame() {
     time = 30;
     //enable the button to make it clickable
     btnStart.removeAttribute('disabled');
-    music.pause();
-    gameoverm.play();
 }
